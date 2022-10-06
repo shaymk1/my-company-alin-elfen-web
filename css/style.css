@@ -4,6 +4,7 @@
 	--yellow: #f5bf23;
 	--black: #111;
 	--white: #fff;
+	--dark-black:#000;
 	--light-color: #666;
 	--light-bg: #eee;
 	--box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -57,6 +58,7 @@ section {
 	display: inline-block;
 	margin-top: 1rem;
 	padding: 1rem 3rem;
+	border-radius: 4px;
 	background: var(--black);
 	color: var(--white);
 	cursor: pointer;
@@ -114,11 +116,19 @@ section {
 	text-transform: capitalize;
 }
 
+.header .logo:hover {
+	color: var(--yellow);
+}
+
+
 .header .logo span {
 	color: var(--yellow);
 	font-family: "Comfortaa", cursive;
 }
 
+.header .logo span:hover {
+	color: var(--black);
+}
 .header .navbar a {
 	font-size: 2rem;
 	color: var(--black);
@@ -375,55 +385,47 @@ section {
 .home {
 	padding: 0;
 }
-
 .home .slide {
-	min-height: 60rem;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	position: relative;
-	background-size: cover !important;
-	background-position: center !important;
+  min-height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .home .slide::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-	/* background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(var(--white)),
-		to(transparent)
-	);
-	background: linear-gradient(90deg, var(--white), transparent); */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(var(--white)), to(transparent));
+  background: linear-gradient(90deg, var(--white), transparent);
 }
 
 .home .slide .content {
-	width: 50rem;
-	position: relative;
+  width: 50rem;
+  position: relative;
 }
 
 .home .slide .content h3 {
-	font-size: 6rem;
-	color: var(--white);
-	text-transform: capitalize;
-	text-transform: uppercase;
+  font-size: 6rem;
+  color: var(--black);
+  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .home .slide .content p {
-	font-size: 1.4rem;
-	color: var(--white);
-	line-height: 2;
-	padding: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--dark-black);
+  line-height: 2;
+  padding: 1rem 0;
 }
 
 .home .swiper-button-next,
@@ -946,7 +948,7 @@ section {
 	.header .login-form {
 		width: 90%;
 	}
-  section {
+	section {
 		padding: 3rem 3rem;
 	}
 	.home .slide {
@@ -966,7 +968,7 @@ section {
 	html {
 		font-size: 50%;
 	}
-  section {
+	section {
 		padding: 3rem 3rem;
 	}
 	.about .row .content h3 {
