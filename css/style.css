@@ -368,7 +368,10 @@ section {
 
 /* clients-section-starts */
 .clients {
-	background: var(--light-bg);
+	background: var(--black);
+}
+.clients h1{
+	color:var(--white);
 }
 .clients h3{
 	font-size: 1.7rem;
@@ -404,9 +407,8 @@ section {
 	-webkit-transition: 0.2s linear;
 	transition: 0.2s linear;
 }
-
-
 /* clients-section-ends */
+
 /* projects-section-starts */
 .projects {
 	background: var(--black);
