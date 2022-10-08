@@ -45,8 +45,8 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
 	background: var(--yellow);
 }
-body{
-	background:var(--black);
+body {
+	background: var(--black);
 }
 
 section {
@@ -95,6 +95,19 @@ section {
 	}
 }
 
+/* /////////////////////////success-html-styling-starts/////////////////// */
+.success {
+	padding: 0;
+}
+
+.success p {
+	font-size: 1.4rem;
+	color: var(--mahogany);
+	line-height: 2;
+	padding: 1rem 0;
+	margin: 1rem;
+}
+/* /////////////////////////success-html-styling-ends/////////////////// */
 .header {
 	position: -webkit-sticky;
 	position: sticky;
@@ -257,7 +270,7 @@ section {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.8); 
+	background: rgba(0, 0, 0, 0.7);
 	/* background: -webkit-gradient(
 		linear,
 		left top,
@@ -291,7 +304,6 @@ section {
 	padding: 1rem 0;
 }
 
-
 .about .box-container .box {
 	text-align: center;
 	background: var(--light-bg);
@@ -309,7 +321,8 @@ section {
 	color: var(--light-color);
 	line-height: 2;
 	padding-top: 0.5rem;
-} */
+}
+*/
 
 /* about-section-ends */
 
@@ -514,8 +527,8 @@ section {
 	padding: 2rem;
 }
 
-.contact .row form .display-none{
-	display:none;
+.contact .row form .display-none {
+	display: none;
 }
 
 .contact .row form h3 {
@@ -547,7 +560,7 @@ section {
 /* footer-section-starts */
 .footer {
 	text-align: center;
-	background: var(--ochre)
+	background: var(--ochre);
 }
 
 .footer .links .btn {
