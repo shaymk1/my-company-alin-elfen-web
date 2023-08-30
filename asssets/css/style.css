@@ -354,4 +354,35 @@ display: grid;
 	margin: 0.5rem 0 1.5rem;
 }
 
+/*-----------------------------------*\
+  #clients
+\*-----------------------------------*/
+/* .clients__container{
+	display:grid;
+	place-items:center;
+} */
+.clients__grid-container{
+display:grid;
+place-items:center;
+margin-top:5rem;
+grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+gap: 3.5rem;
+}
+
+.clients__image{
+	background:white;
+	box-shadow:var(--shadow-1);
+	width:17rem;
+	height:6rem;
+	padding-left:2rem;
+	padding-top:1rem;
+	align-items:center;
+	text-align:center;
+}
+
+.clients__grid-container img{
+	width:auto;
+	height:60px;
+}
+
 
