@@ -1,8 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"); */
 
-@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 /*-----------------------------------*\
   #Reset
@@ -20,7 +19,9 @@
 }
 :root {
 	/* color */
-
+	/* --primary-hue: 358; */
+	--color-gray-200: hsl(var(--primary-hue), 0%, 95%);
+	
 	--yellow: #f5bf23;
 	--black: #111;
 	--white: #fff;
@@ -32,11 +33,11 @@
 	--ochre: #cc7722;
 	--pink-orange: #f89880;
 	--dark-brown: #581845;
-	--orange:#e68615;
-	--purple:#8976af;
-	--light-purple:#e1dee7;
-	--powder-blue:#adc4ed;
-	--dark-blue:#4e3089;
+	--orange: #e68615;
+	--purple: #8976af;
+	--light-purple: #e1dee7;
+	--powder-blue: #adc4ed;
+	--dark-blue: #4e3089;
 	--box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 	--border: 0.1rem solid rgba(0, 0, 0, 0.3);
 	--color-gray-800: hsl(var(--primary-hue), 0%, 80%);
@@ -46,7 +47,7 @@
 	--container-width-lg: 80%;
 	--container-width-sm: 97%;
 
-		/* border-radiuses */
+	/* border-radiuses */
 	--radius-1: 2rem;
 	--radius-2: 1rem;
 	--radius-3: 0.8rem;
@@ -73,14 +74,9 @@
 	text-decoration: none;
 }
 
-
-
-
-
-
 body {
 	font-family: "Poppins", sans-serif;
-	background-color: var(--light-purple); 
+	/* background-color: var(--light-purple);   */
 	color: var(--color-gray-800);
 	line-height: 1.7;
 	font-weight: 300;
@@ -94,6 +90,9 @@ p,
 a,
 figcaption {
 	font-size: 0.85rem;
+	font-family: "poppins", sans-serif;
+	line-height: 1.3;
+	/* color:#373D3F; */
 }
 
 .container {
@@ -112,7 +111,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Outfit", sans-serif;
+	font-family: "poppins", sans-serif;
 	line-height: 1;
 }
 
@@ -120,6 +119,7 @@ h1 {
 	font-family: "Cuprum", sans-serif;
 	font-size: 3rem;
 	font-weight: 800;
+	/* color:#131516; */
 }
 
 h2 {
@@ -132,7 +132,7 @@ section {
 
 .btn {
 	display: inline-block;
-	background-color: var(--color-gray-900);
+	background-color: var(--orange);
 	color: var(--color-gray-200);
 	font-weigth: 500;
 	width: fit-content;
@@ -140,10 +140,11 @@ section {
 	border-radius: var(--radius-3);
 	cursor: pointer;
 	transition: var(--transition);
+	margin-top: 2rem;
 }
 
 .btn:hover {
-	background: var(--color-gray-600);
+	background: var(--purple);
 	color: var(--color-gray-100);
 }
 
@@ -171,16 +172,12 @@ section:nth-child(odd) {
 
 /* /////////////////////////success-html-styling-ends/////////////////// */
 
-
-
-
 /*-----------------------------------*\
   #Header
 \*-----------------------------------*/
 
 nav {
-	/* background: var(--color-nav-bg); */
-	background:white;
+	background: white;
 	border-bottom: 1px solid gray;
 	display: grid;
 	place-items: center;
@@ -201,7 +198,7 @@ nav {
 .nav__container {
 	display: flex;
 	justify-content: space-between;
-	align-items:center;
+	align-items: center;
 }
 
 .logo {
@@ -218,12 +215,12 @@ nav {
 
 .nav__menu a {
 	color: var(--color-gray-900);
-	transition:var(--transition);
-	font-size:1.3rem;
+	transition: var(--transition);
+	font-size: 1.3rem;
 }
 
-.nav__menu a:hover{
-	color:var(--dark-blue);
+.nav__menu a:hover {
+	color: var(--dark-blue);
 }
 
 .nav__theme-btn {
@@ -238,7 +235,71 @@ nav {
 	display: none;
 }
 
+/*-----------------------------------*\
+  #Hero
+\*-----------------------------------*/
+
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url("../images/panels.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color:white;
+}
+
+.hero__container .hero__content {
+	text-align: center;
+	color: white;
+}
+.hero__content h1,
+.hero__content p,{
+	color:white;
+}
 
 
+/*-----------------------------------*\
+  #about
+\*-----------------------------------*/
+.about {
+	display: flex;
+	background: white;
+	/* background:var(--color-gray-300); */
+}
+.about__container {
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	place-items: center;
+	gap: 10rem;
+}
 
+.about__image {
+	height: fit-content;
+	max-height: 100rem;
+	overflow: hidden;
+	box-shadow: var(--shadow-2);
+}
 
+.about__image img {
+	border: solid 1rem var(--color-gray-200);
+	border-radius: var(--radius-2);
+}
+
+.about__content p {
+	margin-bottom: 0.8rem;
+}
+
+.about__content .btn {
+	margin-top: 2rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.about__content h1{
+	font-size:3rem;
+	line-height:1;
+	margin-bottom:1rem;
+
+}

@@ -27,3 +27,42 @@
 			<div class="icons">
 				<div id="menu-btn" class="fas fa-bars"></div>
 			</div>
+
+
+			--primary-hue: 358;
+	--color-nav-bg: hsla(var(--primary-hue), 0%, 100%, 0.4);
+	--granite-gray: hsl(0, 0%, 40%);
+	--color-gray-100: #fff;
+	--color-gray-200: hsl(var(--primary-hue), 0%, 95%);
+	--color-gray-300: hsl(var(--primary-hue), 0%, 85%);
+	--color-gray-400: hsl(var(--primary-hue), 0%, 70%);
+	--color-gray-500: hsl(var(--primary-hue), 0%, 55%);
+	--color-gray-600: hsl(var(--primary-hue), 0%, 40%);
+	--color-gray-700: hsl(var(--primary-hue), 0%, 25%);
+	--color-gray-800: hsl(var(--primary-hue), 0%, 15%);
+	--color-gray-900: hsl(var(--primary-hue), 0%, 5%);
+
+		<img src="./asssets/images/power-plant.png" alt="power plant icon image" />
+					<h3>Electrical MV Services</h3>
+					<p>
+						We do maintenance and installation for all electrical MV services
+					</p>
+				</div>
+
+				<div class="box">
+					<img src="./asssets/images/LT-panels.png" alt="Low Voltage icon image" />
+					<h3>Mini-Sub installation</h3>
+					<p>We do installation for Mini-Subs</p>
+				</div>
+				<div class="box">
+					<img src="./asssets/images/generator-1.png" alt="electrical generator icon image" />
+					<h3>Standby Generators</h3>
+					<p>We do maintenance and installation for electrical Generators</p>
+				</div>
+				<div class="box">
+					<img src="./asssets/images/circuit.png" alt="electrical circuit icon" />
+					<h3>Electrical LT Panels</h3>
+					<p>We do maintenance and installation for electrical LT Panels</p>
+				</div>
+			</div>
+		</section>
