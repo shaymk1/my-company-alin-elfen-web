@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
+	/* color */
+
 	--yellow: #f5bf23;
 	--black: #111;
 	--white: #fff;
@@ -19,6 +24,26 @@
 	--dark-blue:#4e3089;
 	--box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 	--border: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+	/* container */
+	--container-width-lg: 80%;
+	--container-width-sm: 97%;
+
+		/* border-radiuses */
+	--radius-1: 2rem;
+	--radius-2: 1rem;
+	--radius-3: 0.8rem;
+	--radius-4: 0.5rem;
+	--radius-5: 0.3rem;
+	--radius-6: 50%;
+
+	/* transition */
+	--transition: all 300ms ease;
+
+	/* box-shadow */
+	--shadow-1: 3px 4px 30px hsla(0, 0%, 53%, 0.1);
+	--shadow-2: 5px 3px 40px hsla(191, 100%, 17%, 0.1);
+	--shadow-3: 5px 3px 50px hsla(191, 100%, 17%, 0.4);
 }
 
 * {
@@ -52,11 +77,92 @@ html::-webkit-scrollbar-thumb {
 }
 body {
 	background: var(--black);
+	line-height: 1.7;
+	font-weight: 300;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+p,
+a,
+figcaption {
+	font-size: 0.85rem;
+}
+
+.container {
+	width: var(--container-width-lg);
+	margin-inline: auto;
+}
+
+img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Outfit", sans-serif;
+	line-height: 1;
+}
+
+h1 {
+	font-family: "Cuprum", sans-serif;
+	font-size: 3rem;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 2rem;
 }
 
 section {
 	padding: 5rem 10%;
 }
+
+.btn {
+	display: inline-block;
+	background-color: var(--color-gray-900);
+	color: var(--color-gray-200);
+	font-weigth: 500;
+	width: fit-content;
+	padding: 1rem 2.5rem;
+	border-radius: var(--radius-3);
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.btn:hover {
+	background: var(--color-gray-600);
+	color: var(--color-gray-100);
+}
+
+/* sections */
+section {
+	padding: 9rem 0;
+}
+
+section > h1,
+section > p {
+	width: 50%;
+	text-align: center;
+	margin-inline: auto;
+}
+
+section > h1 {
+	margin-bottom: 0.5rem;
+}
+
+section:nth-child(odd) {
+	background: var(--color-gray-200);
+}
+
+/* end of reused styles */
 
 .heading {
 	margin-bottom: 3rem;
@@ -67,7 +173,7 @@ section {
 	border-left: 1rem solid var(--yellow);
 }
 
-.btn {
+/* .btn {
 	display: inline-block;
 	margin-top: 1rem;
 	padding: 1rem 3rem;
@@ -79,26 +185,26 @@ section {
 	text-transform: capitalize;
 	-webkit-transition: 0.2s linear;
 	transition: 0.2s linear;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
 	background: var(--yellow);
 	color: var(--black);
-}
+} */
 
-@-webkit-keyframes fadeIn {
+/* @-webkit-keyframes fadeIn {
 	0% {
 		top: 50%;
 		opacity: 0;
 	}
-}
+} */
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
 	0% {
 		top: 50%;
 		opacity: 0;
 	}
-}
+} */
 
 /* /////////////////////////success-html-styling-starts/////////////////// */
 .success {
@@ -253,6 +359,7 @@ section {
 
 .about {
 	padding: 0;
+	background:var(--light-purple);
 }
 
 .about .slide {

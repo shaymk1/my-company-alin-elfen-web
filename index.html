@@ -4,6 +4,27 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		- extra meta tags -->
+		<meta name="theme-color" content="#000000" />
+		<meta
+			name="description"
+			content="Portfolio website site created using html and css and javascript"
+		/>
+		<meta
+			name="description"
+			content="This is a portfolio website of Mamosebetsi Kekae "
+		/>
+		<meta name="og:title" content="Mamosebetsi Kekae Portfolio Website" />
+		<meta
+			name="og:description"
+			content="This is a portfolio website of Mamosebetsi Kekae created by using HTML, CSS and Javascript"
+		/>
+		<meta name="og:image" content="./assets/images/yellow.png" />
+		<!-- 
+      - preload images
+           -->
+		<link rel="preload" as="image" href="./assets/images/me-3.jpg" />
+		<link rel="preload" as="image" href="./assets/images/me-png-f.png" />
 		<title>Alin Elfen Electrical Enterprises</title>
 
 		<!-- font-awesome -->
@@ -22,36 +43,57 @@
 			href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 		/>
 		<!-- custom-css -->
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="./asssets/css/style.css" />
 	</head>
 	<body>
 		<!-- header-section-starts -->
-		<header class="header">
-			<!-- logo -->
-			<a href="#home">
-				<img src="images/logo.svg" class="logo" alt="" />
-			</a>
+		<header>
+			<!-- desk-top menu -->
+			<nav>
+				<div class="container nav__container">
+					<div class="logo">
+						<a href="#hero" class="menu-link">
+							<img src="./asssets/images/logo.svg" alt="logo image" />
+						</a>
+					</div>
+					<ul class="nav__menu">
+						<li>
+							<a href="#hero" class="menu-link">Home</a>
+						</li>
+						<li>
+							<a href="#about" class="menu-link">About</a>
+						</li>
+						<!-- <li>
+							<a href="#experience" class="menu-link">Experience</a>
+						</li> -->
+						<li>
+							<a href="#projects" class="menu-link">Projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="menu-link">Contact</a>
+						</li>
+					</ul>
 
-			<!-- <a href="#home" class="logo">Alin <span>Elfen</span></a> -->
-
-			<nav class="navbar">
-				<a href="#home">Home</a>
-				<a href="#about">About</a>
-				<a href="#services">Services</a>
-				<a href="#projects">Gallery</a>
-				<a href="#contact">Contact</a>
+					<!-- hamburger buttons -->
+					<div class="nav__buttons">
+						<button class="nav__theme-btn">
+							<ion-icon name="moon-outline"></ion-icon>
+						</button>
+						<button class="nav__toggle-open">
+							<ion-icon name="menu-outline"></ion-icon>
+						</button>
+						<button class="nav__toggle-close">
+							<ion-icon name="close-outline"></ion-icon>
+						</button>
+					</div>
+				</div>
 			</nav>
-			<!-- hamburger menu icon -->
-			<div class="icons">
-				<div id="menu-btn" class="fas fa-bars"></div>
-			</div>
 		</header>
 
 		<!-- header-section-ends -->
 
 		<!-- home-section-start -->
 		<section class="home" id="home">
-			
 			<div class="container">
 				<section
 					class="slide"
@@ -68,36 +110,29 @@
 
 		<!-- home-section-end -->
 
-	
-
 		<!--new-about-section-start- -->
 
 		<!-- home-section-start -->
 		<section class="about" id="about">
-			
 			<div class="container">
-				<section
-					class="slide"
-					style="background: url(images/bakkies.png) no-repeat"
-				>
-					<div class="content">
-						<h1 class="heading">Our History</h1>
-						<h3>Alin Elfen Electrical Enterprises</h3>
-						<p>Alin Elfen Electrical Enterprises is level 2 BEE contributor. It was
+				<div class="content">
+					<h1 class="heading">Our History</h1>
+					<h3>Alin Elfen Electrical Enterprises</h3>
+					<p>
+						Alin Elfen Electrical Enterprises is level 2 BEE contributor. It was
 						established in 1998 under the leadership of two qualified women. We
 						have grown steadily over the past 20 years to become one of the most
 						fierce competitor within the electrical high voltage, medium voltage
-						and generators maintenance and installation fields.</p>
-						<a href="#contact" class="btn">get started</a>
-					</div>
-				</section>
+						and generators maintenance and installation fields.
+					</p>
+					<a href="#contact" class="btn">get started</a>
+				</div>
+				<!-- </section> -->
 			</div>
 		</section>
 
-      <!--new-about-section-end- -->
+		<!--new-about-section-end- -->
 
-
-		
 		<!-- about-section-end -->
 
 		<!-- services-section-starts -->
@@ -105,36 +140,36 @@
 			<h1 class="heading">Our Services</h1>
 			<div class="box-container">
 				<div class="box">
-					<img src="images/power-plant.png" alt="" />
+					<img src="./asssets/images/power-plant.png" alt="power plant icon image" />
 					<h3>Electrical MV Services</h3>
 					<p>
 						We do maintenance and installation for all electrical MV services
 					</p>
 				</div>
 				<div class="box">
-					<img src="images/transformer.png" alt="" />
+					<img src="./asssets/images/transformer.png" alt="electrical transformer image icon" />
 					<h3>Transformer Services</h3>
 					<p>
 						We do maintenance and installation for Transformers including tests
 					</p>
 				</div>
 				<div class="box">
-					<img src="images/cable-reel.png" alt="" />
+					<img src="./asssets/images/cable-reel.png" alt="electrical  reel icon image" />
 					<h3>Electrical MV Cable Services</h3>
 					<p>We do installation and fault-finding for electrical MV Cables</p>
 				</div>
 				<div class="box">
-					<img src="images/LT-panels.png" alt="" />
+					<img src="./asssets/images/LT-panels.png" alt="Low Voltage icon image" />
 					<h3>Mini-Sub installation</h3>
 					<p>We do installation for Mini-Subs</p>
 				</div>
 				<div class="box">
-					<img src="images/generator-1.png" alt="" />
+					<img src="./asssets/images/generator-1.png" alt="electrical generator icon image" />
 					<h3>Standby Generators</h3>
 					<p>We do maintenance and installation for electrical Generators</p>
 				</div>
 				<div class="box">
-					<img src="images/circuit.png" alt="" />
+					<img src="./asssets/images/circuit.png" alt="electrical circuit icon" />
 					<h3>Electrical LT Panels</h3>
 					<p>We do maintenance and installation for electrical LT Panels</p>
 				</div>
@@ -149,22 +184,22 @@
 
 			<div class="box-container">
 				<div class="box">
-					<img src="images/astral.png" alt="" />
+					<img src="./asssets/images/astral.png" alt="astral company logo" />
 				</div>
 				<div class="box">
-					<img src="images/did.png" alt="" />
+					<img src="./asssets/images/did.png" alt="Department of Infrastructure and Development logo" />
 				</div>
 				<div class="box">
-					<img src="images/kfc.png" alt="" />
+					<img src="./asssets/images/kfc.png" alt="KFC logo" />
 				</div>
 				<div class="box">
-					<img src="images/mogale.jpg" alt="" />
+					<img src="./asssets/images/mogale.jpg" alt="Mogale City Local Council Logo" />
 				</div>
 				<div class="box">
-					<img src="images/mtn.jpeg" alt="" />
+					<img src="./asssets/images/mtn.jpeg" alt="MTN logo" />
 				</div>
 				<div class="box">
-					<img src="images/SPAR-logo.jpg" alt="" />
+					<img src="./asssets/images/SPAR-logo.jpg" alt="SPAR supermarket logo" />
 				</div>
 			</div>
 		</section>
@@ -174,9 +209,9 @@
 		<section class="projects" id="projects">
 			<h1 class="heading">Our Gallery</h1>
 			<div class="box-container">
-				<a href="images/gallery-1.jpg" class="box">
+				<a href="./asssets/images/gallery-1.jpg" class="box">
 					<div class="image">
-						<img src="images/gallery-1.jpg" alt="" />
+						<img src="./asssets/images/gallery-1.jpg" alt="Huge green Generator image " />
 					</div>
 					<div class="content">
 						<div class="info">
@@ -187,9 +222,9 @@
 					</div>
 				</a>
 
-				<a href="images/gallery-3.jpg" class="box">
+				<a href="./asssets/images/gallery-3.jpg" class="box">
 					<div class="image">
-						<img src="images/gallery-3.jpg" alt="" />
+						<img src="./asssets/images/gallery-3.jpg" alt="Men working on installing cables on a generator" />
 					</div>
 					<div class="content">
 						<div class="info">
@@ -200,9 +235,9 @@
 					</div>
 				</a>
 
-				<a href="images/gallery-4.jpg" class="box">
+				<a href="./asssets/images/gallery-4.jpg" class="box">
 					<div class="image">
-						<img src="images/gallery-4.jpg" alt="" />
+						<img src="./asssets/images/gallery-4.jpg" alt="Men working on installing cables on a generator" />
 					</div>
 					<div class="content">
 						<div class="info">
@@ -213,9 +248,9 @@
 					</div>
 				</a>
 
-				<a href="images/gallery-5.jpg" class="box">
+				<a href="./asssets/images/gallery-5.jpg" class="box">
 					<div class="image">
-						<img src="images/gallery-5.jpg" alt="" />
+						<img src="./asssets/images/gallery-5.jpg" alt="Generator within an enclosure" />
 					</div>
 					<div class="content">
 						<div class="info">
@@ -226,9 +261,9 @@
 					</div>
 				</a>
 
-				<a href="images/gallery-6.jpg" class="box">
+				<a href="./asssets/images/gallery-6.jpg" class="box">
 					<div class="image">
-						<img src="images/gallery-6.jpg" alt="" />
+						<img src="./asssets/images/gallery-6.jpg" alt="Men working on a cable" />
 					</div>
 					<div class="content">
 						<div class="info">
@@ -239,9 +274,9 @@
 					</div>
 				</a>
 
-				<a href="images/gallery-7.jpg" class="box">
+				<a href="./asssets/images/gallery-7.jpg" class="box">
 					<div class="image">
-						<img src="images/gallery-7.jpg" alt="" />
+						<img src="./asssets/images/gallery-7.jpg" alt="picture of a transformer on a concrete slab" />
 					</div>
 					<div class="content">
 						<div class="info">
@@ -279,9 +314,8 @@
 					data-netlify-honeypot="bot-field"
 					onSubmit="submit"
 					action="/success/"
-
 				>
-				<input name="bot-field" class="display-none">
+					<input name="bot-field" class="display-none" />
 					<h3>Get In Touch</h3>
 					<input
 						type="text"
