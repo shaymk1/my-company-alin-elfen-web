@@ -308,6 +308,9 @@ nav {
 /*-----------------------------------*\
   #services
 \*-----------------------------------*/
+.services{
+	background:var(--light-purple);
+}
 .services__container{
 display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
@@ -316,7 +319,7 @@ display: grid;
 }
 
 .service {
-	background: var(--color-gray-100);
+	background: white;
 	box-shadow: var(--shadow-2);
 	padding: 1.4rem;
 	border-radius: var(--radius-2);
@@ -325,12 +328,13 @@ display: grid;
 }
 
 .service:hover {
+	background:var(--powder-blue);
 	box-shadow: var(--shadow-2);
+	/* color:white; */
 }
 
 .service__image {
-	/* height: 7rem; */
-	 /* max-height: 10rem;  */
+
 	margin-bottom: 1.4rem;
 	border-radius: var(--radius-4);
 	overflow: hidden;
@@ -349,4 +353,5 @@ display: grid;
 .service p {
 	margin: 0.5rem 0 1.5rem;
 }
+
 
