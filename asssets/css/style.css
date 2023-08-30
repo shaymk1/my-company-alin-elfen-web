@@ -21,7 +21,8 @@
 	/* color */
 	/* --primary-hue: 358; */
 	--color-gray-200: hsl(var(--primary-hue), 0%, 95%);
-	
+		--mint-cream: hsl(160, 100%, 98%);
+	--cultured: hsl(0, 0%, 93%);
 	--yellow: #f5bf23;
 	--black: #111;
 	--white: #fff;
@@ -309,7 +310,7 @@ nav {
   #services
 \*-----------------------------------*/
 .services{
-	background:var(--light-purple);
+	background:var(--mint-cream);
 }
 .services__container{
 display: grid;
@@ -357,10 +358,7 @@ display: grid;
 /*-----------------------------------*\
   #clients
 \*-----------------------------------*/
-/* .clients__container{
-	display:grid;
-	place-items:center;
-} */
+
 .clients__grid-container{
 display:grid;
 place-items:center;
@@ -385,4 +383,32 @@ gap: 3.5rem;
 	height:60px;
 }
 
+/*-----------------------------------*\
+  #contact
+\*-----------------------------------*/
 
+
+.contact{
+	background:var(--mint-cream);
+}
+
+.contact__container{
+	display:grid;
+	place-items:center;
+	
+}
+
+.contact__content{
+	margin-top:2rem;
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	place-items:center;
+	gap:6rem;
+	
+}
+
+.contact__list{
+	display:flex;
+	justify-content:center;
+	gap:3rem;
+}
