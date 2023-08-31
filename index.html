@@ -68,9 +68,6 @@
 						<li>
 							<a href="#services" class="menu-link">Services</a>
 						</li>
-						<li>
-							<a href="#gallery" class="menu-link">Gallery</a>
-						</li>
 
 						<li>
 							<a href="#contact" class="menu-link">Contact</a>
@@ -281,7 +278,7 @@
 									aria-hidden="true"
 									class="contact-icon"
 								></ion-icon
-								><a href="tel:+27829034541" class="contact-link">Call</a>
+								><a href="tel:+27829034541" class="contact-link">+27829034541</a>
 							</li>
 							<li class="contact-item">
 								<ion-icon
@@ -290,7 +287,7 @@
 									class="contact-icon"
 								></ion-icon
 								><a href="mailto:chrema16@gmail.com" class="contact-link"
-									>Email</a
+									>chrema16@gmail.com</a
 								>
 							</li>
 						</ul>
@@ -304,7 +301,7 @@
 									aria-hidden="true"
 									class="contact-icon"
 								></ion-icon
-								><a href="tel:+27825784900" class="contact-link">Call</a>
+								><a href="tel:+27825784900" class="contact-link">+27825784900</a>
 							</li>
 							<li class="contact-item">
 								<ion-icon
@@ -313,7 +310,7 @@
 									class="contact-icon"
 								></ion-icon
 								><a href="mailto:attie@chrema.co.za" class="contact-link"
-									>Email</a
+									>attie@chrema.co.za</a
 								>
 							</li>
 						</ul>
@@ -327,15 +324,10 @@
 			contact section
 		 --------->
 
-		<section class="footer">
+		<footer class="footer">
 			<div class="container footer__container">
 				<div class="footer__menu">
-					<div class="logo">
-						<a href="#hero" class="menu-link">
-							<img src="./asssets/images/logo-white.svg" alt="logo image" />
-						</a>
-					</div>
-					<ul class="nav__menu">
+					<ul class="footer__menu-list">
 						<li>
 							<a href="#hero" class="menu-link">Home</a>
 						</li>
@@ -345,41 +337,60 @@
 						<li>
 							<a href="#services" class="menu-link">Services</a>
 						</li>
-						<li>
-							<a href="#gallery" class="menu-link">Gallery</a>
-						</li>
 
 						<li>
 							<a href="#contact" class="menu-link">Contact</a>
 						</li>
 					</ul>
+					<div class="logo">
+						<a href="#hero" class="menu-link">
+							<img src="./asssets/images/logo-white.svg" alt="logo image" />
+						</a>
+					</div>
+					<div class="contact-list-container">
+						<h3>Contact Us</h3>
+						<ul class="contact-list">
+							<li class="contact-item">
+								<ion-icon
+									name="call"
+									aria-hidden="true"
+									class="contact-icon"
+								></ion-icon
+								><a href="tel:+27829034541" class="contact-link">+27829034541</a>
+							</li>
+							<li class="contact-item">
+								<ion-icon
+									name="mail"
+									aria-hidden="true"
+									class="contact-icon"
+								></ion-icon
+								><a href="mailto:chrema16@gmail.com" class="contact-link"
+									>chrema16@gmail.com</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
 			<div class="credit">
-				<small
+				<small class="small"
 					>created by <span>Mamosebetsi Kekae</span> | all rights
 					reserved!</small
 				>
 			</div>
-		</section>
+		</footer>
 
 		<!-- footer section ends -->
 
-		<!-- lightgallery-js -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
-		<!-- swiper -->
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+		
+		
 		<!-- custom js file link  -->
 		<script src="./asssets/js/script.js"></script>
 		<!-- light gallery -->
-		<script>
-			lightGallery(document.querySelector(".projects .box-container"));
-		</script>
+		
 
-		<!-- smpt -->
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<!-- ion-icon-->
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
