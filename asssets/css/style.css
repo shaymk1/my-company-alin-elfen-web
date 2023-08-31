@@ -386,11 +386,11 @@ nav {
 .clients__grid-container {
 	display: grid;
 	place-items: center;
-	text-align:center;
-	 margin-top: 5rem;
+	text-align: center;
+	margin-top: 5rem;
 	/* padding:5rem; */
 	/* grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); */
-	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
+	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 	gap: 3.5rem;
 }
 
@@ -602,11 +602,11 @@ footer {
 	}
 
 	/* nav */
-nav{
-	height:4rem;
-}
+	nav {
+		height: 4rem;
+	}
 	.nav__menu {
-		background-color: black; 
+		background-color: black;
 		position: fixed;
 		top: 4rem;
 		right: 0;
@@ -614,25 +614,21 @@ nav{
 		gap: 1rem;
 		width: fit-content;
 		display: none;
-		padding-bottom:1rem;
-		
-		
+		padding-bottom: 1rem;
 	}
 
 	.nav__menu li {
 		width: 100%;
-		
 	}
 
 	.nav__menu li a {
-		
 		font-size: 0.9rem;
 		padding: 0.3rem 4rem;
 		width: 100%;
 		diplay: block;
 		border-top: solid 1px var(--color-gray-300);
 		text-align: center;
-		color:white;
+		color: white;
 		/* box-shadow: -2rem 5rem 5rem rgba(0, 0, 0, 0.3); */
 	}
 
@@ -641,7 +637,7 @@ nav{
 		display: inline-block;
 		font-size: 3rem;
 		color: var(--color-gray-900);
-		background:transparent;
+		background: transparent;
 	}
 
 	.nav__toggle-close {
@@ -653,7 +649,6 @@ nav{
 		align-items: center;
 		gap: 2.5rem;
 	}
-
 
 	/* hero  */
 
@@ -776,8 +771,7 @@ nav{
 }
 
 @media screen and (max-width: 1024px) {
-
-		/* general */
+	/* general */
 	h1 {
 		font-size: 1.8rem;
 	}
@@ -802,11 +796,11 @@ nav{
 
 	/* nav */
 
-	nav{
-	height:4rem;
-}
+	nav {
+		height: 4rem;
+	}
 	.nav__menu {
-		background-color: black; 
+		background-color: black;
 		position: fixed;
 		top: 4rem;
 		right: 0;
@@ -814,25 +808,21 @@ nav{
 		gap: 1rem;
 		width: fit-content;
 		display: none;
-		padding-bottom:1rem;
-		
-		
+		padding-bottom: 1rem;
 	}
 
 	.nav__menu li {
 		width: 100%;
-		
 	}
 
 	.nav__menu li a {
-		
 		font-size: 0.9rem;
 		padding: 0.3rem 4rem;
 		width: 100%;
 		diplay: block;
 		border-top: solid 1px var(--color-gray-300);
 		text-align: center;
-		color:white;
+		color: white;
 		/* box-shadow: -2rem 5rem 5rem rgba(0, 0, 0, 0.3); */
 	}
 
@@ -841,7 +831,7 @@ nav{
 		display: inline-block;
 		font-size: 3rem;
 		color: var(--color-gray-900);
-		background:transparent;
+		background: transparent;
 	}
 
 	.nav__toggle-close {
@@ -853,7 +843,6 @@ nav{
 		align-items: center;
 		gap: 2.5rem;
 	}
-
 
 	/* hero  */
 
