@@ -386,8 +386,11 @@ nav {
 .clients__grid-container {
 	display: grid;
 	place-items: center;
-	margin-top: 5rem;
-	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+	text-align:center;
+	 margin-top: 5rem;
+	/* padding:5rem; */
+	/* grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); */
+	grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
 	gap: 3.5rem;
 }
 
@@ -398,12 +401,14 @@ nav {
 .clients__image {
 	background: white;
 	box-shadow: var(--shadow-1);
+	/* height: 5rem;
+	margin-bottom: 0.5rem; */
 	width: 17rem;
 	height: 6rem;
 	padding-left: 2rem;
 	padding-top: 1rem;
 	align-items: center;
-	text-align: center;
+	/* text-align: center;  */
 }
 
 .clients__grid-container img {
@@ -794,7 +799,7 @@ nav{
 	section > p {
 		width: var(--container-width-sm);
 	}
-	
+
 	/* nav */
 
 	nav{
