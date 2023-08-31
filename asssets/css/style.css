@@ -114,6 +114,7 @@ h5,
 h6 {
 	font-family: "poppins", sans-serif;
 	line-height: 1;
+	color:#555555;
 }
 
 h1 {
@@ -407,8 +408,57 @@ gap: 3.5rem;
 	
 }
 
-.contact__list{
+.contact-item-list{
+	
+}
+
+.contact-item-list h3{
+font-size:2rem;
+margin-bottom:2rem;
+color:#555555;
+
+
+}
+
+.contact-list {
 	display:flex;
+	flex-direction:row;
 	justify-content:center;
+	align-items:center;
 	gap:3rem;
+}
+
+.contact-list .contact-item{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	gap:1rem; 
+}
+
+.contact-list .contact-item a{
+	color:gray;
+transition:var(--transition);
+}
+
+.contact-list .contact-item ion-icon{
+	color:var(--purple);
+	transition:var(--transition);
+
+}
+
+
+.contact-list .contact-item a:hover
+{
+	color:var(--dark-blue);
+	
+
+}
+
+/*-----------------------------------*\
+  #footer
+\*-----------------------------------*/
+
+.footer{
+background:red;
 }
