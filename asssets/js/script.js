@@ -1,17 +1,20 @@
-let navbar = document.querySelector(".header .navbar");
-let searchForm = document.querySelector(".header .search-form");
-let loginForm = document.querySelector(".header .login-form");
-let contactInfo = document.querySelector(".contact-info");
+// opening the menu
 
-document.querySelector("#menu-btn").onclick = () => {
-	navbar.classList.toggle("active");
-	searchForm.classList.remove("active");
-	loginForm.classList.remove("active");
-};
+// const navMenu = document.querySelector(".nav__menu");
+// const navBtnOpen = document.querySelector(".nav__toggle-open");
+// const navBtnClose = document.querySelector(".nav__toggle-close");
 
-window.onscroll = () => {
-	navbar.classList.remove("active");
-	searchForm.classList.remove("active");
-	loginForm.classList.remove("active");
-	contactInfo.classList.remove("active");
+// const handleMenuOpen = () => {
+// 	navMenu.style.display = "flex";
+// 	navBtnOpen.style.display = "none";
+// 	navBtnClose.style.display = "inline-block";
+// };
+
+const navMenu = document.querySelector(".nav__menu");
+const navBtnOpen = document.querySelector(".nav__toggle-open");
+const navBtnClose = document.querySelector(".nav__toggle-close");
+const openNavHandler = () => {
+	navMenu.style.display = "flex";
+	navBtnOpen.style.display = "none";
+	navBtnClose.style.display = "inline-block";
 };
